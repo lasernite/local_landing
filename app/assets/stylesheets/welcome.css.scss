@@ -1,0 +1,27 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+video#bgvid {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background: url(local_page_v1_1.jpg) no-repeat;
+background-size: cover;
+}
+
+
+// Mobile Optimization
+
+@media screen and (max-device-width: 800px) {
+
+body { 
+	background: url(local_page_v1_1.jpg) #000 no-repeat center center fixed; 
+}
+
+#bgvid { 
+	display: none; 
+}
+
+}
+

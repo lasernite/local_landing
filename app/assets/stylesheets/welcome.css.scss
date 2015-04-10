@@ -22,8 +22,59 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	font-style: italic;
-	text-shadow: 4px 4px 1px #000;
+	text-shadow: 2px 2px 0px #000;
 
+}
+
+.email_div {
+	margin-top: 8%;
+}
+
+.email_box {
+	width: 46%;
+	padding: 0.5vmax;
+	margin-left: 21%;
+	font-size: 1.1vmax;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-style: italic;
+	outline: none;
+	border-color: transparent;
+	float: left;
+}
+
+.email_box:hover {
+	box-shadow: 1px 0px 5px #FF7B00, 0px -1px 5px #FF7B00, -1px 0px 5px #FF7B00, 0px 1px 5px #FF7B00;
+}
+
+.email_box:focus {
+	border-color: #FF7B00;
+	box-shadow: 0 0 15px #FF7B00;
+}
+
+.email_button {
+	padding: 0.5vmax;
+	width: 12%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1.1vmax;
+	border-radius: 0px;
+  	background-color: #FF7B00;
+ 	color: #ffffff;
+ 	border-color: transparent;
+ 	outline: none;
+ 	float: left;
+}
+
+.email_button:hover {
+	background-color: #FFC700;
+}
+
+.email_button:active {
+	background-color: #FFC700;
+	margin-left: 2px;
+	margin-top: 2px;
 }
 
 video#bgvid {

@@ -1,12 +1,23 @@
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,600' rel='stylesheet' type='text/css'>
 </head>
 
 
 <body>
 	<div class="main_text"> Join Your Local Network </div>
-	<div class="main_sub_text"> Be a community leader, signup for the beta! </div>
+	<div class="main_sub_text"> Be a community leader, sign up for the beta! </div>
+
+	<%= form_for :user, url: users_path do |f| %>
+
+		<div class="email_div">
+		    <%= f.text_field :text, :class => "email_box", :placeholder => "your email address here" %>
+
+		 
+		    <%= f.submit 'Get Early Access', :class => "email_button" %>
+		 </div>
+
+	<% end %>
 
 	<video autoplay loop poster="local_page_v1_1.jpg" id="bgvid">
 	<source src="local_page_v1_1.webm" type="video/webm">

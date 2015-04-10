@@ -100,11 +100,11 @@
 }
 
 .what {
-	margin-left: 10vw;
+	margin-left: 9.5vw;
 }
 
 .how {
-	margin-left: 10vw;
+	margin-left: 9.5vw;
 }
 
 .who:hover, .what:hover, .how:hover {
@@ -118,6 +118,12 @@
 	font-style: italic;
 	text-shadow: 2px 2px 0px #000;
 	font-size: 1.5vmax;
+}
+
+.who_text, .what_text, .how_text {
+	margin-top: 1vmax;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 }
 
 

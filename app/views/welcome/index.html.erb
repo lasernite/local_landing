@@ -5,20 +5,47 @@
 
 
 <body>
+	<!-- Page Title and Subtitle -->
 	<div class="main_text"> Join Your Local Network </div>
+
 	<div class="main_sub_text"> Be a community leader, sign up for the beta! </div>
 
+	<!-- Email Submit Form -->
 	<%= form_for :user, url: users_path do |f| %>
 
 		<div class="email_div">
 		    <%= f.text_field :email, :class => "email_box", :placeholder => "your email address here" %>
-
 		 
 		    <%= f.submit 'Get Early Access', :class => "email_button" %>
-		 </div>
+		</div>
 
 	<% end %>
 
+	<!-- More Information, Who, What, How -->
+	<div class="who_what_how">
+
+		<div class="who">
+
+			<div class="who_title"> Who? </div>
+
+			<div class="who_text"> Everyone! :) </div>
+
+		</div>
+
+		<div class="what">
+			<div class="what_title"> What? </div>
+			<div class="what_text"> A Local, Community Platform!</div>
+		</div>
+
+		<div class="how">
+			<div class="how_title"> How? </div>
+			<div class="how_text"> Love, energy, intelligence and creativity!</div>
+		</div>
+
+	</div>
+
+
+	<!-- Background Video/Image -->
 	<video autoplay loop poster="local_page_v1_1.jpg" id="bgvid">
 	<source src="local_page_v1_1.webm" type="video/webm">
 	<source src="local_page_v1_1.mp4" type="video/mp4">

@@ -8,7 +8,7 @@
 	font-size: 5vmax;
 	color: white;
 	text-align: center;
-	margin-top: 10%;
+	margin-top: 7%;
 	font-family: 'Bree Serif', serif;
 	text-shadow: 4px 4px 1px #000;
 }
@@ -27,7 +27,7 @@
 }
 
 .email_div {
-	margin-top: 8%;
+	margin-top: 7%;
 }
 
 .email_box {
@@ -76,6 +76,52 @@
 	margin-left: 2px;
 	margin-top: 2px;
 }
+
+.who_what_how {
+	position: relative;
+	margin-top: 30vh;
+	width: 81vw;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+}
+
+.who, .what, .how {
+	float: left;
+	width: 18vw;
+	background: rgba(25, 20, 20, 0.5);
+	padding: 1vw;
+	border: 0.2vw solid transparent;
+	border-radius: 8px;
+	height: 26vh;
+}
+
+.who {
+}
+
+.what {
+	margin-left: 10vw;
+}
+
+.how {
+	margin-left: 10vw;
+}
+
+.who:hover, .what:hover, .how:hover {
+	border: 0.2vw solid #fff;
+}
+
+.who_title, .what_title, .how_title {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-style: italic;
+	text-shadow: 2px 2px 0px #000;
+	font-size: 1.5vmax;
+}
+
+
+
 
 video#bgvid {
 	position: fixed; right: 0; bottom: 0;

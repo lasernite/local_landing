@@ -80,7 +80,7 @@
 .who_what_how {
 	position: relative;
 	margin-top: 30vh;
-	width: 81vw;
+	width: calc(80vw + 7px);
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
@@ -91,7 +91,7 @@
 	width: 18vw;
 	background: rgba(25, 20, 20, 0.5);
 	padding: 1vw;
-	border: 0.2vw solid transparent;
+	border: 2px solid transparent;
 	border-radius: 8px;
 	height: 26vh;
 }
@@ -100,15 +100,15 @@
 }
 
 .what {
-	margin-left: 9.5vw;
+	margin-left: calc(10vw - 3px);
 }
 
 .how {
-	margin-left: 9.5vw;
+	margin-left: calc(10vw - 3px);
 }
 
 .who:hover, .what:hover, .how:hover {
-	border: 0.2vw solid #fff;
+	border: 2px solid #fff;
 }
 
 .who_title, .what_title, .how_title {

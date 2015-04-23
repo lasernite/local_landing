@@ -10,6 +10,17 @@
 
 	<div class="main_sub_text"> Be a community leader, sign up for the beta! </div>
 
+	<!-- Email Errors -->
+	<div class="error_message_div">
+		<% if @user.errors.any? %>
+			<% @user.errors[:email].each do |msg| %>
+				<div class="error_message">
+			  		<%= msg %>
+			  	</div>
+			<% end %>
+		<% end %>
+	</div>
+
 	<!-- Email Submit Form -->
 	<%= form_for :user, url: users_path do |f| %>
 

@@ -26,8 +26,21 @@
 
 }
 
+.error_message_div {
+	margin-top: 6%;
+	height: 1.3vmax
+}
+
+.error_message {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: red;
+	font-size: 1.1vmax;
+	text-align: center;
+}
+
 .email_div {
-	margin-top: 7%;
+	margin-top: 1%;
 }
 
 .email_box {
@@ -79,7 +92,7 @@
 
 .who_what_how {
 	position: relative;
-	margin-top: 30vh;
+	margin-top: 18vh;
 	width: calc(80vw + 7px);
 	margin-left: auto;
 	margin-right: auto;

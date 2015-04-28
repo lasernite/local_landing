@@ -5,10 +5,13 @@
 
 
 <body>
+	<%# Get City Name %>
+	<% @city = request.location.city %>
+
 	<!-- Page Title and Subtitle -->
 	<div class="main_text"> The World is Connected. But are we? </div>
 
-	<div class="main_sub_text"> Be a <%= request.location.city %> community leader, sign up for the beta! </div>
+	<div class="main_sub_text"> Be a <%= request.location.latitude %> <%= request.location.longitude %> <%= @city %> community leader, sign up for the beta! </div>
 
 	<!-- Email Errors -->
 	<div class="error_message_div">
@@ -25,6 +28,10 @@
 	<%= form_for :user, url: users_path do |f| %>
 
 		<div class="email_div">
+			<%= f.hidden_field :city, :value => @city %>
+			<%= f.hidden_field :latitude, :value => request.location.latitude %>
+			<%= f.hidden_field :longitude, :value => request.location.longitude %>
+
 		    <%= f.text_field :email, :class => "email_box", :placeholder => "your email address here" %>
 		 
 		    <%= f.submit 'Get Early Access', :class => "email_button" %>

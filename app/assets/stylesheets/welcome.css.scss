@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html {
+	margin-bottom: 15px;
+}
+
 .main_text {
 	position:relative;
 	// font-size: 72px;
@@ -78,7 +82,7 @@
  	border-color: transparent;
  	outline: none;
  	float: left;
- 	// An attempt to remove rounded corners on mobile
+ 	// Remove rounded corners on mobile
  	-webkit-appearance: none;
   	-webkit-border-radius: 0;
 }
@@ -109,7 +113,6 @@
 	padding: 1vw;
 	border: 2px solid transparent;
 	border-radius: 8px;
-	height: 26vh;
 }
 
 .who {

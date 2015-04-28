@@ -78,6 +78,9 @@
  	border-color: transparent;
  	outline: none;
  	float: left;
+ 	// An attempt to remove rounded corners on mobile
+ 	-webkit-appearance: none;
+  	-webkit-border-radius: 0;
 }
 
 .email_button:hover {
@@ -102,7 +105,7 @@
 .who, .what, .how {
 	float: left;
 	width: 18vw;
-	background: rgba(25, 20, 20, 0.5);
+	// background: rgba(25, 20, 20, 0.5);
 	padding: 1vw;
 	border: 2px solid transparent;
 	border-radius: 8px;

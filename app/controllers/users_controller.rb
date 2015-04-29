@@ -1,8 +1,15 @@
 class UsersController < ApplicationController
 	def create
 		@user = User.new(user_params)
-		@user.save
-		render 'welcome/index'
+		if @user.save
+			redirect_to @user
+		else
+			render 'welcome/index'
+		end
+	end
+
+	def show
+		@user = User.find(params[:id])
 	end
 
 	private

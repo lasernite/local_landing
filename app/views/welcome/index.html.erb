@@ -1,71 +1,60 @@
-<head>
-	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,600,400' rel='stylesheet' type='text/css'>
-</head>
+<!-- Page Title and Subtitle -->
+<div class="main_text"> The World is Connected. But are we? </div>
 
+<div class="main_sub_text"> Be a <%= @city %> community leader, sign up for the beta! </div>
 
-<body>
-	<%# Get City Name %>
-	<% @city = request.location.city %>
-
-	<!-- Page Title and Subtitle -->
-	<div class="main_text"> The World is Connected. But are we? </div>
-
-	<div class="main_sub_text"> Be a <%= @city %> community leader, sign up for the beta! </div>
-
-	<!-- Email Errors -->
-	<div class="error_message_div">
-		<% if @user.errors.any? %>
-			<% @user.errors[:email].each do |msg| %>
-				<div class="error_message">
-			  		<%= msg %>
-			  	</div>
-			<% end %>
+<!-- Email Errors -->
+<div class="error_message_div">
+	<% if @user.errors.any? %>
+		<% @user.errors[:email].each do |msg| %>
+			<div class="error_message">
+		  		<%= msg %>
+		  	</div>
 		<% end %>
-	</div>
-
-	<!-- Email Submit Form -->
-	<%= form_for :user, url: users_path do |f| %>
-
-		<div class="email_div">
-			<%= f.hidden_field :city, :value => @city %>
-			<%= f.hidden_field :latitude, :value => request.location.latitude %>
-			<%= f.hidden_field :longitude, :value => request.location.longitude %>
-
-		    <%= f.text_field :email, :class => "email_box", :placeholder => "your email address here" %>
-		 
-		    <%= f.submit 'Get Early Access', :class => "email_button" %>
-		</div>
-
 	<% end %>
+</div>
 
-	<!-- More Information, Who, What, How -->
-	<div class="who_what_how">
+<!-- Email Submit Form -->
+<%= form_for :user, url: users_path do |f| %>
 
-		<div class="who">
+	<div class="email_div">
+		<%= f.hidden_field :city, :value => @city %>
+		<%= f.hidden_field :latitude, :value => request.location.latitude %>
+		<%= f.hidden_field :longitude, :value => request.location.longitude %>
 
-			<div class="who_title"> Who? </div>
+	    <%= f.text_field :email, :class => "email_box", :placeholder => "your email address here" %>
+	 
+	    <%= f.submit 'Get Early Access', :class => "email_button" %>
+	</div>
 
-			<div class="who_text"> Everyone! Let's use the fantastic potential of the internet to create close-knit, engaging, and collaborative local community everywhere! Whatever you're into, community is good for you, me, and everyone around us. Whether you're a social revolutionist or simply wanting to find out what's going on in town tonight, if it involves connecting to the people, events, organizations, or information around you, the local network the place to start. </div>
+<% end %>
 
-		</div>
+<!-- More Information, Who, What, How -->
+<div class="who_what_how">
 
-		<div class="what">
-			<div class="what_title"> What? </div>
-			<div class="what_text"> A local community platform to discover and engage with the people around you through interests, groups, events, news, discussions, and a stream that aggregates the collective happenings of the nearby world around you! A platform with the sole intent to maximize the growth of community by making local interaction effortless and blissful :)</div>
-		</div>
+	<div class="who">
 
-		<div class="how">
-			<div class="how_title"> How? </div>
-			<div class="how_text"> By empowering you, the people and communities; by creating and growing the platform, to meet your needs and desires; by financially supporting you, through donating 51% of our profits every year back to your (our) communities through real-world local projects you submit and democratically choose by voting on the site. </div>
-		</div>
+		<div class="who_title"> Who? </div>
+
+		<div class="who_text"> Everyone! Let's use the fantastic potential of the internet to create close-knit, engaging, and collaborative local community everywhere! Whatever you're into, community is good for you, me, and everyone around us. Whether you're a social revolutionist or simply wanting to find out what's going on in town tonight, if it involves connecting to the people, events, organizations, or information around you, the local network the place to start. </div>
 
 	</div>
 
+	<div class="what">
+		<div class="what_title"> What? </div>
+		<div class="what_text"> A local community platform to discover and engage with the people around you through interests, groups, events, news, discussions, and a stream that aggregates the collective happenings of the nearby world around you! A platform with the sole intent to maximize the growth of community by making local interaction effortless and blissful :)</div>
+	</div>
 
-	<!-- Background Video/Image -->
-	<video autoplay loop poster="local_page_v1_1.jpg" id="bgvid">
-	<source src="local_page_v1_1.webm" type="video/webm">
-	<source src="local_page_v1_1.mp4" type="video/mp4">
-	</video>
-</body>
+	<div class="how">
+		<div class="how_title"> How? </div>
+		<div class="how_text"> By empowering you, the people and communities; by creating and growing the platform, to meet your needs and desires; by financially supporting you, through donating 51% of our profits every year back to your (our) communities through real-world local projects you submit and democratically choose by voting on the site. </div>
+	</div>
+
+</div>
+
+
+<!-- Background Video/Image -->
+<video autoplay loop poster="local_page_v1_1.jpg" id="bgvid">
+<source src="local_page_v1_1.webm" type="video/webm">
+<source src="local_page_v1_1.mp4" type="video/mp4">
+</video>

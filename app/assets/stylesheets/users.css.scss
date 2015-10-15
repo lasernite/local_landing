@@ -2,6 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #EB7506;
+}
+
 .new_title {
-	font-size: 10vmax;
+	font-family: 'Bree Serif', serif;
+	padding-top: 10vh;
+	font-size: 9vmax;
+	color: #fff;
+	text-align: center;
+}
+
+.subtext {
+	color: #fff;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	margin-top: 6vh;
 }

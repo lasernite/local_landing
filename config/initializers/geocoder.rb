@@ -1,4 +1,4 @@
 Geocoder.configure(
 
-  :timeout=>20
+  :timeout=>5
 )

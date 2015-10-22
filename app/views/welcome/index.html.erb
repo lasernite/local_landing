@@ -19,8 +19,8 @@
 
 	<div class="email_div">
 		<%= f.hidden_field :city, :value => @city %>
-		<%= f.hidden_field :latitude, :value => request.location.latitude %>
-		<%= f.hidden_field :longitude, :value => request.location.longitude %>
+		<%= f.hidden_field :latitude, :value => 'request.location.latitude' %>
+		<%= f.hidden_field :longitude, :value => 'request.location.longitude' %>
 
 	    <%= f.text_field :email, :class => "email_box", :placeholder => "your email address here" %>
 	 

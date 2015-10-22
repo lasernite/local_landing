@@ -1,4 +1,5 @@
 Geocoder.configure(
 
-  :timeout=>5
+  :timeout=>20,
+  :ip_lookup=>:telize
 )

@@ -5,15 +5,15 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #EB7506;
+	background-color: #000;
 }
 
 // Through page
 
 .new_title {
 	font-family: 'Open Sans', sans-serif;
-	padding-top: 10vh;
-	font-size: 9vmax;
+	padding-top: calc(50vh - 108px);
+	font-size: 48px;
 	color: #fff;
 	text-align: center;
 }

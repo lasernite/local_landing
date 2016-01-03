@@ -165,7 +165,7 @@ video#bgvid {
 
 // Mobile Optimization
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-device-width: 800px) {
 
 body { 
 	background: url(local_page_v1_1.jpg) #000 no-repeat center center fixed; 

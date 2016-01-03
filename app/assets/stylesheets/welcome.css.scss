@@ -6,6 +6,11 @@ html {
 	margin-bottom: 15px;
 }
 
+body { 
+	background: url(asset-path('local_page_v1_1.jpg')) #000 no-repeat center center fixed; 
+	background-size: cover;
+}
+
 
 .main_text {
 	position:relative;
@@ -169,10 +174,6 @@ video#bgvid {
 
 @media only screen and (max-device-width: 800px) {
 
-body { 
-	background: url(local_page_v1_1.jpg) #000 no-repeat center center fixed; 
-	background-size: cover;
-}
 
 #bgvid { 
 	display: none; 

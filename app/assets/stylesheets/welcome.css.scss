@@ -157,7 +157,9 @@ html {
 video#bgvid {
 	position: fixed; right: 0; bottom: 0;
 	min-width: 100%; min-height: 100%;
-	width: auto; height: auto; z-index: -100;
+	width: auto; 
+	height: auto; 
+	z-index: -100;
 	background: url(local_page_v1_1.jpg) no-repeat;
 	background-size: cover;
 }
@@ -169,7 +171,7 @@ video#bgvid {
 
 body { 
 	background: url(local_page_v1_1.jpg) #000 no-repeat center center fixed; 
-	background-color: #000;
+	background-size: cover;
 }
 
 #bgvid { 

@@ -3,12 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 html {
-	margin-bottom: 15px;
 }
 
 body { 
 	background: url(asset-path('local_page_v1_1.jpg')) #000 no-repeat center center fixed; 
 	background-size: cover;
+	margin: 0px;
 }
 
 
@@ -191,5 +191,15 @@ video#bgvid {
 	width: 22%;
 }
 
+}
+
+
+// Section 2
+
+.section2 {
+	margin-top: 58vh;
+	height: 100vh;
+	width: 100%;
+	background-color: white;
 }
 

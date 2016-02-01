@@ -1,33 +1,57 @@
-<!-- Page Title and Subtitle -->
-<div class="main_text">Local, Everywhere.</div>
+<div class="section1">
+	<!-- Page Title and Subtitle -->
+	<h1 class="main_text center header cd-headline letters type">
+	    <span>Local</span> 
+	    <span class="cd-words-wrapper waiting">
+	        <b class="is-visible">Network</b>
+	        <b>Revolution</b>
+	        <b>Community</b>
+	        <b>Everywhere</b>
+	        <b>Interests</b>
+	        <b>Happenings</b>
+	        <b>Exploration</b>
+	        <b>Discovery</b>
+	        <b>Engagement</b>
+	        <b>People</b>
+	        <b>Events</b>
+	        <b>Groups</b>
+	        <b>Posts</b>
+	        <b>Life</b>
+	        <b>Prosperity</b>
+	        <b>Love</b>
+	    </span>
+	</h1>
+	  
 
-<div class="main_sub_text"> Discover and engage with the happenings around you.</div>
 
-<!-- Email Errors -->
-<div class="error_message_div">
-	<% if @user.errors.any? %>
-		<% @user.errors[:email].each do |msg| %>
-			<div class="error_message">
-		  		<%= msg %>
-		  	</div>
+	<!-- <div class="main_sub_text"> Discover and engage with the happenings around you.</div> -->
+
+	<!-- Email Errors -->
+	<div class="error_message_div">
+		<% if @user.errors.any? %>
+			<% @user.errors[:email].each do |msg| %>
+				<div class="error_message">
+			  		<%= msg %>
+			  	</div>
+			<% end %>
 		<% end %>
-	<% end %>
-</div>
-
-<!-- Email Submit Form -->
-<%= form_for :user, url: users_path do |f| %>
-
-	<div class="email_div">
-		<%= f.hidden_field :city, :value => @city %>
-		<%= f.hidden_field :latitude, :value => request.location.latitude %>
-		<%= f.hidden_field :longitude, :value => request.location.longitude %>
-
-	    <%= f.text_field :email, :class => "email_box", :placeholder => "your email address here" %>
-	 
-	    <%= f.submit 'Get Early Access', :class => "email_button" %>
 	</div>
 
-<% end %>
+	<!-- Email Submit Form -->
+	<%= form_for :user, url: users_path do |f| %>
+
+		<div class="email_div">
+			<%= f.hidden_field :city, :value => @city %>
+			<%= f.hidden_field :latitude, :value => request.location.latitude %>
+			<%= f.hidden_field :longitude, :value => request.location.longitude %>
+
+		    <%= f.text_field :email, :class => "email_box", :placeholder => "your email address here" %>
+		 
+		    <%= f.submit 'Get Early Access', :class => "email_button" %>
+		</div>
+
+	<% end %>
+</div>
 
 <!-- More Information, Who, What, How
 <div class="who_what_how">

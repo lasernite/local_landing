@@ -11,6 +11,10 @@ body {
 	margin: 0px;
 }
 
+.section1 {
+	height: 100vh;
+}
+
 
 .main_text {
 	position:relative;
@@ -18,12 +22,13 @@ body {
 	font-size: 5vmax;
 	color: white;
 	text-align: center;
-	margin-top: 7%;
-	//font-family: 'Bree Serif', serif;
-	//font-family: 'Open Sans', sans-serif;
+	margin-top: 18vh;
+	// font-family: 'Bree Serif', serif;
+	// font-family: 'Open Sans', sans-serif;
 	font-family: 'Montserrat', sans-serif;
-	text-shadow: 4px 4px 1px #000;
+	// text-shadow: 4px 4px 1px #000;
 }
+
 
 .main_sub_text {
 	position:relative;
@@ -33,8 +38,8 @@ body {
 	margin-top: 2%;
 	font-family: 'Open Sans', sans-serif;
 	// font-weight: 600;
-	//font-style: italic;
-	text-shadow: 2px 2px 0px #000;
+	// font-style: italic;
+	// text-shadow: 2px 2px 0px #000;
 
 }
 
@@ -197,7 +202,6 @@ video#bgvid {
 // Section 2
 
 .section2 {
-	margin-top: 58vh;
 	height: 100vh;
 	width: 100%;
 	background-color: white;

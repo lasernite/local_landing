@@ -131,19 +131,51 @@ body {
 // Stick Top Nav
 
 .top_nav {
-	z-index: 20;
 	position: absolute;
 	width: 100%;
 	color: #FFF;
 	background-color: #000;
-	height: 100px;
+	height: 54px;
 	box-sizing: border-box; 
+	box-shadow: 0 1px 8px rgba(0,0,0,0.3);
 }
 
 .top_nav_scrolled {
-	background-color: blue;
+	background-color: #03A9F4;
 	position: fixed;
 	top: 0;
+}
+
+.why_nav, .how_nav, .what_nav, .join_nav {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	display: inline-block;
+	padding-top: 18px;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	color: #fff;
+}
+
+.why_nav{
+	margin-left: 36px;
+}
+
+.how_nav {
+	margin-left: 36px;
+}
+
+.what_nav {
+	margin-left: 36px;
+}
+
+.join_nav {
+	padding-left: 36px;
+	position: absolute;
+	right: 36px;
+}
+
+.why_nav:hover, .how_nav:hover, .what_nav:hover, .join_nav:hover {
+	color: #EEEEEE;
 }
 
 

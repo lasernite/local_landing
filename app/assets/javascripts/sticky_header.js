@@ -1,3 +1,5 @@
+// Sticky Top Bar on Scroll Down
+
 var topNavResize = function() {
 	var  top_nav = $(".top_nav");
     top_nav_scrolled = "top_nav_scrolled";

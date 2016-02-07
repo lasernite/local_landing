@@ -7,7 +7,7 @@ var topNavResize = function() {
     main_text = $('.main_text').height();
 
 	$(window).scroll(function() {
-	  if( $(this).scrollTop() > section1 ) {
+	  if( $(this).scrollTop() > section1 - 1 ) {
 	    top_nav.addClass(top_nav_scrolled);
 	  } else {
 	    top_nav.removeClass(top_nav_scrolled);

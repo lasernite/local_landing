@@ -12,6 +12,8 @@
 //
 //= require jquery-2.1.1.min
 //= require jquery_ujs
+//= require skrollr
+//= require wow
 //= require materialize.min
 //= require custom-min
 //= require plugin-min

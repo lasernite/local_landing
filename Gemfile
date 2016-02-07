@@ -34,7 +34,13 @@ gem 'spring',        group: :development
 # Geo stuff
 gem 'geocoder'
 
-# Animate CSS magic
+# Parallax scroller Skrollr
+gem 'skrollr-rails'
+
+# Wow.js for animation when content scrolled into view
+gem 'wow-rails'
+
+# Animate CSS (neccesary for wow.js)
 gem "animate-rails"
 
 # Heroku

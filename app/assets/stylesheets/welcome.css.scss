@@ -12,7 +12,7 @@ body {
 }
 
 .section1 {
-	height: 100vh;
+	height: 82vh;
 }
 
 
@@ -26,6 +26,7 @@ body {
 	// font-family: 'Bree Serif', serif;
 	// font-family: 'Open Sans', sans-serif;
 	font-family: 'Montserrat', sans-serif;
+	//font-weight: bold;
 	// text-shadow: 4px 4px 1px #000;
 }
 
@@ -108,6 +109,24 @@ body {
 	background-color: #FFC700;
 	margin-left: 2px;
 	margin-top: 2px;
+}
+
+.chevron_down {
+	position: absolute;
+	// padding-top: calc(100vh - 720px);
+	width: 50vw;
+	//overflow: hidden;
+	bottom: 12px;
+	margin-left: calc(50vw - 36px);
+}
+
+#chevron_down {
+	animation-delay: 5s;
+	animation-iteration-count: 3;
+	-webkit-animation-delay: 5s;
+	-webkit-animation-iteration-count: 3;
+	-moz-animation-delay: 5s;
+	-moz-animation-iteration-count: 3;
 }
 
 

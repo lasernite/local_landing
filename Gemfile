@@ -34,6 +34,9 @@ gem 'spring',        group: :development
 # Geo stuff
 gem 'geocoder'
 
+# Animate CSS magic
+gem "animate-rails"
+
 # Heroku
 gem 'rails_12factor', group: :production
 

@@ -122,12 +122,12 @@ body {
 }
 
 #chevron_down {
-	animation-delay: 5s;
-	animation-iteration-count: 3;
-	-webkit-animation-delay: 5s;
-	-webkit-animation-iteration-count: 3;
-	-moz-animation-delay: 5s;
-	-moz-animation-iteration-count: 3;
+	animation-delay: 12s;
+	animation-iteration-count: 4;
+	-webkit-animation-delay: 12s;
+	-webkit-animation-iteration-count: 4;
+	-moz-animation-delay: 12s;
+	-moz-animation-iteration-count: 4;
 }
 
 // Stick Top Nav
@@ -193,17 +193,17 @@ body {
 }
 
 .why_section {
-	margin-top: 54px;
+	margin-top: 5vmin;
 	padding-left: 5%;
 	padding-right: 5%;
 }
 
-.why1, .why2, .why3, .why4 {
+.why1, .why2, .why3, .why4, .why5 {
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
-	font-size: 36px;
+	font-size: 3.3vmin;
 	text-align: center;
-	padding-top: 108px;
+	padding-top: 10vmin;
 }
 
 .why1 {
@@ -216,8 +216,13 @@ body {
 }
 
 .why4 {
-	padding-top: 216px;
-	font-size: 72px;
+	padding-top: 20vmin;
+	font-size: 6.6vmin;
+}
+
+.why5 {
+	padding-top: 5vmin;
+	font-size: 2.2vmin;
 }
 
 // .who_what_how {

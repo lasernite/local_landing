@@ -225,6 +225,26 @@ body {
 	font-size: 2.2vmin;
 }
 
+
+// Section 3
+
+.section3 {
+	background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.network_animation {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	// stroke-dasharray:20; 
+	// background-color: red;
+	// animation-name: example;
+ //  animation-duration: 4s;
+}
+
 // .who_what_how {
 // 	position: relative;
 // 	margin-top: 18vh;

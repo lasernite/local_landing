@@ -223,6 +223,13 @@ body {
 
 // Section 3
 
+.how_anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+  visibility: hidden;
+}
+
 .section3 {
 	background-color: #fff;
   height: calc(100vh - 54px);
@@ -263,7 +270,7 @@ body {
 
 // Section 4
 
-.how_anchor {
+.what_anchor {
   display: block;
   position: relative;
   top: -54px;
@@ -287,6 +294,14 @@ body {
 
 .s4_1, .s4_2, .s4_3, .s4_4 {
 	padding-top: 6vmin;
+}
+
+
+// Section 5
+
+.section5 {
+	height: calc(100vh - 54px);
+	width: 100vw;
 }
 
 // .who_what_how {

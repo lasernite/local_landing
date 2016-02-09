@@ -174,6 +174,33 @@
 	<a href="#join" class="s5_1">
 		Join the Local, Global Revolution.
 	</a>
+
+	<!-- Email Errors -->
+	<div class="error_message_div">
+		<% if @user.errors.any? %>
+			<% @user.errors[:email].each do |msg| %>
+				<div class="error_message">
+			  		<%= msg %>
+			  	</div>
+			<% end %>
+		<% end %>
+	</div>
+
+	<!-- Email Submit Form -->
+	<%= form_for :user, url: users_path do |f| %>
+
+		<div class="email_div">
+			<%= f.hidden_field :city, :value => @city %>
+			<%= f.hidden_field :latitude, :value => request.location.latitude %>
+			<%= f.hidden_field :longitude, :value => request.location.longitude %>
+
+		    <%= f.text_field :email, :class => "email_box", :placeholder => "your email address here" %>
+		 
+		    <%= f.submit 'Get Early Access', :class => "email_button" %>
+		</div>
+
+	<% end %>
+
 </div>
 
 

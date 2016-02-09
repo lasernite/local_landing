@@ -139,13 +139,17 @@ body {
 	background-color: #000;
 	height: 54px;
 	box-sizing: border-box; 
+	z-index: 3;
 	// box-shadow: 0 1px 8px rgba(0,0,0,0.3);
 }
 
 .top_nav_scrolled {
-	background-color: #03A9F4;
 	position: fixed;
 	top: 0;
+}
+
+.top_nav_color_1 {
+	background-color: #03A9F4;
 }
 
 .why_nav, .how_nav, .what_nav, .join_nav {
@@ -256,19 +260,28 @@ body {
 	margin-top: 5vmin;
 }
 
-.s3_1 {
+
+// Section 4
+
+.section4 {
+	width: 100vw;
+	height: calc(100vh - 54px);
+	background-color: #000;
 }
 
-.s3_2 {
-
+.section4_text {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 3.3vmin;
+	margin-left: 25vw;
+	margin-right: 25vw;
+	padding-top: 54px;
 }
 
-.s3_3 {
-
+.s4_1, .s4_2, .s4_3, .s4_4 {
+	padding-top: 6vmin;
 }
 
-.s3_4 {
-}
 // .who_what_how {
 // 	position: relative;
 // 	margin-top: 18vh;

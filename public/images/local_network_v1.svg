@@ -9,11 +9,11 @@
     <!-- Animate Network Color -->
     <animate  attributeName="fill"
     			values="#ffffff;#03A9F4"
-    			dur="27s" 
+    			dur="3s" 
     			fill="freeze"/>
     <animate  attributeName="stroke"
     			values="#ffffff;#03A9F4"
-    			dur="27s"
+    			dur="3s"
     			fill="freeze" />
 <!--     <animate  attributeName="fill"
     			from="#0008ff" to="#03A9F4"

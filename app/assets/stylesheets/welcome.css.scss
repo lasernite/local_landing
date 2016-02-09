@@ -186,7 +186,7 @@ body {
 
 .section2 {
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
 	background-color: #03A9F4;
 	box-sizing: border-box; 
 	overflow: hidden;
@@ -206,17 +206,8 @@ body {
 	padding-top: 10vmin;
 }
 
-.why1 {
-}
-
-.why2 {
-}
-
-.why3 {
-}
-
 .why4 {
-	padding-top: 20vmin;
+	padding-top: 15vmin;
 	font-size: 6.6vmin;
 }
 
@@ -230,21 +221,54 @@ body {
 
 .section3 {
 	background-color: #fff;
-  height: 100vh;
+  height: calc(100vh - 54px);
   width: 100vw;
 }
 
-
 .network_animation {
 	width: 100vw;
-	height: 100vh;
+	float: right;
+	height: calc(100vh - 54px);
 	object-fit: cover;
-	// stroke-dasharray:20; 
-	// background-color: red;
-	// animation-name: example;
- //  animation-duration: 4s;
 }
 
+.network_gradient {
+	background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0.9), rgba(255,255,255,0.8),
+		rgba(255,255,255,0.2), rgba(255,255,255,0.1), rgba(255,255,255,0));
+	width: 100vw;
+	height: calc(100vh - 54px);
+	position: absolute;
+}
+
+.section3_text {
+	position: absolute;
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
+	font-size: 3.3vmin;
+	margin-left: 10vmin;
+	margin-right: 55vw;
+	text-shadow: 0.1vmin 0.1vmin 0px #fff;
+	margin-top: 54px;
+	z-index: 2;
+}
+
+.s3_1, .s3_2, .s3_3, .s3_4 {
+	margin-top: 5vmin;
+}
+
+.s3_1 {
+}
+
+.s3_2 {
+
+}
+
+.s3_3 {
+
+}
+
+.s3_4 {
+}
 // .who_what_how {
 // 	position: relative;
 // 	margin-top: 18vh;

@@ -263,6 +263,13 @@ body {
 
 // Section 4
 
+.how_anchor {
+  display: block;
+  position: relative;
+  top: -54px;
+  visibility: hidden;
+}
+
 .section4 {
 	width: 100vw;
 	height: calc(100vh - 54px);

@@ -161,6 +161,7 @@ body {
 	text-decoration: none;
 	color: #fff;
 	z-index: 10;
+	border-bottom: none;
 }
 
 .why_nav{
@@ -176,13 +177,12 @@ body {
 }
 
 .join_nav {
-	padding-left: 36px;
 	position: absolute;
 	right: 36px;
 }
 
 .why_nav:hover, .how_nav:hover, .what_nav:hover, .join_nav:hover {
-	color: #EEEEEE;
+	color: rgb(216,216,216);
 }
 
 

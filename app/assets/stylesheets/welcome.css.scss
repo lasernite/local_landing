@@ -312,6 +312,8 @@ body {
 	text-align: center;
 	display: block;
 	padding-top: 27vmin;
+	padding-left: 5vw;
+	padding-right: 5vw;
 }
 
 // .who_what_how {
@@ -381,21 +383,24 @@ video#bgvid {
 @media only screen and (max-device-width: 800px) {
 
 
-#bgvid { 
-	display: none; 
-}
+	#bgvid { 
+		display: none; 
+	}
 
-.main_text {
-	margin-top: 20%;
-}
+	.main_text {
+		margin-top: 20%;
+	}
 
-.email_box {
-	margin-left: 16%;
-}
+	.email_box {
+		margin-left: 4vw;
+		padding: 1.2vmax;
+		width: 66vw;
+	}
 
-.email_button {
-	width: 22%;
-}
+	.email_button {
+		width: 22vw;
+		padding: 1.2vmax;
+	}
 
 }
 

@@ -300,8 +300,42 @@ body {
 .emphasize_4 {
 	font-size: 4vmin;
 	font-weight: 700;
-	color: #03A9F4
+	color: #03a9f4;
 }
+
+// .e_41 {
+// 	color: red;
+// }
+
+// .e_42 {
+// 	color: green;
+// }
+
+// .e_43 {
+// 	color: blue;
+// }
+
+// .e_44 {
+// 	color: yellow;
+// }
+
+// .e_45 {
+// 	color: purple;
+// }
+
+// .e_46 {
+// 	color: orange;
+// }
+
+// .e_47 {
+
+// }
+
+// .e_48 {
+
+// }
+
+
 
 
 // Section 5
@@ -309,6 +343,7 @@ body {
 .section5 {
 	height: calc(100vh - 54px);
 	width: 100vw;
+	position: relative;
 }
 
 .s5_1 {
@@ -321,6 +356,53 @@ body {
 	padding-top: 18vh;
 	padding-left: 5vw;
 	padding-right: 5vw;
+}
+
+
+.footer {
+	position: absolute;
+	bottom: 16px;
+	width: 100vw;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.footer_link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.pad_left {
+	padding-left: 24px;
+}
+
+.footer_link:hover {
+	color: #03A9F4;
+}
+
+
+// Static Pages
+
+.static_page {
+	color: #fff;
+	width: 90vw;
+	padding-left: 5vw;
+}
+
+.static_title {
+	margin-top: 6vh;
+	font-size: 6vh;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.static_text {
+	padding: 16px 16px 16px 16px;
+	background-color: rgba(0,0,0,0.54);
+	width: 800px;
+	margin-top: 6vh;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 10px;
 }
 
 // .who_what_how {

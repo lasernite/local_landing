@@ -10,7 +10,7 @@ class WelcomeController < ApplicationController
   	# else
   	# 	@city = @is_city
   	# end
-    @city = "turned off"
+    @city = request.remote_ip
 
   end
 end
